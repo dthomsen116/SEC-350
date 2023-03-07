@@ -12,8 +12,6 @@ set firewall name DMZ-2-WAN enable-default-log
 set firewall name DMZ-2-WAN rule 1 action 'accept'
 set firewall name DMZ-2-WAN rule 1 description 'The Stamp to allow connections'
 set firewall name DMZ-2-WAN rule 1 state established 'enable'
-set firewall name DMZ-2-WAN rule 999 action 'accept'
-set firewall name DMZ-2-WAN rule 999 source address '172.16.50.3'
 set firewall name LAN-2-DMZ default-action 'drop'
 set firewall name LAN-2-DMZ enable-default-log
 set firewall name LAN-2-DMZ rule 1 action 'accept'
